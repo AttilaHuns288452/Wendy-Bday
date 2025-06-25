@@ -191,3 +191,117 @@ audio{
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
+
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .Middlepart {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .Middlepart h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    audio {
+
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Convert fixed positioning to a scrollable layout */
+    .bday_messege,
+    .tenor-gif-embed,
+    .birthday-image,
+    .together {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        max-width: none;
+        margin: 20px auto;
+    }
+
+    .bday_messege {
+        max-height: 300px;
+    }
+
+    .birthday-image img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .together {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .together img {
+        max-width: 100%;
+        max-height: 150px;
+    }
+
+    .ribbon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ribbon-content {
+        font-size: 12px;
+        width: 150px;
+        right: -30px;
+        top: 20px;
+    }
+}
+
+/* For smaller mobile phones */
+@media screen and (max-width: 480px) {
+    .Middlepart h2 {
+        font-size: 1.2rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .cake-container img {
+        width: 80%;
+    }
+
+    .together {
+        grid-template-columns: 1fr;
+    }
+
+    .bday_messege h1 {
+        font-size: 1.3rem;
+    }
+
+    .bday_messege p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust heart animation for smaller screens */
+    .heart {
+        width: 15px;
+        height: 15px;
+    }
+}
