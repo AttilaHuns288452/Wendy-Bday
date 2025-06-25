@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Wendy</title>
+    <link rel="stylesheet" href="practice.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="hearts" id="hearts"></div>
+    <div class="ribbon">
+        <div class="ribbon-content">Happy 18th!</div>
+    </div>
+
+    <div class="Middlepart">
+        <h2>✨ Happy Birthday Wendy ✨</h2>
+        <div class="image-container">
+            <img id="Wendy" src="bdaywendy.jpg" alt="Lodi">
+            <img id="byeon" src="20240512193935_Kim-Hye-Yoon-Byeon-Woo-Seok-3.jpg" alt="Lodi">
+        </div>
+        <div class="cake-container">
+            <img id="cake" src="cake.jpg" alt="Lodi">
+        </div>
+        <h2>🎂 Happy 18th Birthday!! 🎂</h2>
+    </div>
+
+    <audio controls autoplay loop >
+        <source src="Jungkook Happy Birthday Song [Colour Coded lyrics Romanized] Korean version..mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio controls autoplay loop style="position: fixed; top: 40px; left: 0px;">
+        <source src="BTS Singing Happy Birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="bday_messege">
+        <h1>💖 Byeon Woo Seok's Birthday Message 💖</h1>
+        <p>English:</p>
+        <p>Dear Wendy,</p>
+        <p>Happy 18th Birthday to one of my greatest fans! Today marks such a special milestone in your life, and I wanted to take a moment to celebrate YOU.</p>
+        <p>I truly appreciate your unwavering support and the love you've shown me throughout my journey. Fans like you are the reason I continue to pursue my passion with such dedication. Your enthusiasm and cheerfulness bring so much positivity not just to my life, but to everyone around you.</p>
+        <p>As you step into this new chapter of adulthood, I hope you continue to be the happy and cheerful person you've always been. Your bright spirit is a gift to this world. May you grow even more into the beautiful person you're becoming and embrace all the wonderful opportunities that await you in the future.</p>
+        <p>Your 18th birthday is just the beginning of countless amazing adventures ahead. Continue to chase your dreams with the same passion you've always shown, and never lose that beautiful smile of yours.</p>
+        <p>Thank you for being such an incredible fan. Your support means more to me than you could ever know.</p>
+        <p>Wishing you the happiest of birthdays filled with love, laughter, and all your favorite things!</p>
+        <p>With sincere appreciation,</p>
+        <p>Byeon Woo Seok 💕</p>
+        <p>Korean:</p>
+        <p>친애하는 웬디에게,</p>
+        <p>나의 가장 위대한 팬 중 한 명인 당신의 18번째 생일을 진심으로 축하합니다! 오늘은 당신의 인생에서 매우 특별한 이정표이며, 잠시 시간을 내어 당신을 축하하고 싶었습니다.</p>
+        <p>내 여정 내내 보여준 당신의 변함없는 지지와 사랑에 진심으로 감사드립니다. 당신과 같은 팬들이 있기에 저는 이러한 열정으로 제 꿈을 계속 추구할 수 있습니다. 당신의 열정과 쾌활함은 제 삶뿐만 아니라 주변 모든 사람들에게 많은 긍정적인 에너지를 가져다 줍니다.</p>
+        <p>성인이 되는 이 새로운 장을 시작하면서, 당신이 항상 그래왔던 것처럼 행복하고 쾌활한 사람으로 계속되기를 바랍니다. 당신의 밝은 정신은 이 세상에 선물입니다. 앞으로 더욱 아름다운 사람으로 성장하고 미래에 기다리고 있는 모든 멋진 기회를 포용하길 바랍니다.</p>
+        <p>당신의 18번째 생일은 앞으로 수많은 놀라운 모험의 시작일 뿐입니다. 항상 보여주었던 같은 열정으로 꿈을 계속 추구하고, 그 아름다운 미소를 절대 잃지 마세요.</p>
+        <p>이렇게 놀라운 팬이 되어주셔서 감사합니다. 당신의 지지는 당신이 생각하는 것보다 저에게 더 많은 의미가 있습니다.</p>
+        <p>사랑, 웃음, 그리고 당신이 좋아하는 모든 것들로 가득 찬 가장 행복한 생일이 되길 바랍니다!</p>
+        <p>진심 어린 감사를 담아,</p>
+        <p>변우석 💕</p>
+    </div>
+
+    <div class="birthday-image">
+        <img src="ur,mouse_pad_small_flatlay,square,600x600.jpg" alt="Birthday Image" style="height: 6cm; width: 10cm; margin-left: 1.5cm; border: 2px solid #ff85c2; border-radius: 15px; box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);">
+    </div>
+
+    <div class="together">
+        <img src="pic1.jpeg">
+        <img src="pic2.jpeg">
+        <img src="pic3.jpeg">
+        <img src="pic4.jpeg">
+        <img src="pic5.jpeg">
+        <img src="pic6.jpeg">
+        <img src="pic7.jpeg">
+        <img src="pic8.jpeg">
+    </div>
+
+    <script>
+
+        const heartsContainer = document.getElementById('hearts');
+        const numberOfHearts = 20;
+        
+        for (let i = 0; i < numberOfHearts; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            heart.style.animationDelay = `${Math.random() * 5}s`;
+            heart.style.opacity = Math.random() * 0.5 + 0.3;
+            heart.style.transform = `scale(${Math.random() * 0.5 + 0.5})`;
+            heartsContainer.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
